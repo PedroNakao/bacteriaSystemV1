@@ -1,0 +1,9 @@
+nome;descricao;criterioPositivo;ativo
+Indol;Producao de indol a partir do triptofano pela enzima triptofanase.;Anel vermelho na superficie apos reagente de Kovac.;true
+Citrato;Capacidade de utilizar citrato como unica fonte de carbono.;Mudanca de cor de verde para azul no meio de Simmons.;true
+H2S;Producao de gas sulfidrico a partir de aminoacidos sulfurados.;Enegrecimento do meio (TSI ou SIM).;true
+Ureia;Hidrolise da ureia em amonia e CO2 pela enzima urease.;Mudanca de cor para rosa/vermelho no meio de Christensen.;true
+Motilidade;Capacidade de locomocao ativa em meio semi-solido.;Turvacao difusa ao redor da linha de inoculacao.;true
+Lisina;Descarboxilacao da lisina com formacao de cadaverina.;Mudanca de cor para purpura no meio de Moeller.;true
+Lactose;Capacidade de fermentar a lactose.;Producao de acido (mudanca de cor) no meio TSI.;true
+Gas glicose;Producao de gas durante a fermentacao da glicose.;Formacao de bolha no tubo de Durham (TSI/glicose).;true
