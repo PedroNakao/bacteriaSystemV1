@@ -60,14 +60,14 @@ public class TesteManualRankingReal {
 
     // ---------- EDITE AQUI OS TESTES QUE VOCE QUER SIMULAR ----------
     static final Map<String, ResultadoTeste> TESTES_MARCADOS = new LinkedHashMap<>() {{
-        put("Indol", ResultadoTeste.NEGATIVO);
-        put("Citrato", ResultadoTeste.POSITIVO);
-        put("H2S", ResultadoTeste.POSITIVO);
+        put("Indol", ResultadoTeste.POSITIVO);
+        put("Citrato", ResultadoTeste.NEGATIVO);
+        put("H2S", ResultadoTeste.NEGATIVO);
         put("Ureia", ResultadoTeste.NEGATIVO);
         put("Motilidade", ResultadoTeste.POSITIVO);
         put("Lisina", ResultadoTeste.POSITIVO);
-        put("Lactose", ResultadoTeste.NEGATIVO);
-        put("Gas glicose", ResultadoTeste.VARIAVEL);
+        put("Lactose", ResultadoTeste.POSITIVO);
+        put("Gas glicose", ResultadoTeste.POSITIVO);
     }};
     // ------------------------------------------------------------------
 
@@ -105,7 +105,7 @@ public class TesteManualRankingReal {
             resultados.add(r);
         }
 
-        List<RankingIdentificacao> ranking = service.algoritmoBayes(resultados);
+        List<RankingIdentificacao> ranking = service.algoritmoBayes(resultados, null);
 
         System.out.println("Testes marcados: " + TESTES_MARCADOS);
         System.out.println();

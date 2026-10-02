@@ -149,7 +149,7 @@ class IdentificacaoServiceTest {
         }
 
         List<RankingIdentificacao> ranking =
-                service.algoritmoBayes(cincoTestes(ResultadoTeste.POSITIVO));
+                service.algoritmoBayes(cincoTestes(ResultadoTeste.POSITIVO), null);
         imprime("Caso 1: cinco testes positivos", ranking);
 
         assertEquals(2, ranking.size());
@@ -194,7 +194,7 @@ class IdentificacaoServiceTest {
             resultados.add(resultado(teste(i + 1, "Teste" + (i + 1)), marcacoes[i]));
         }
 
-        List<RankingIdentificacao> ranking = service.algoritmoBayes(resultados);
+        List<RankingIdentificacao> ranking = service.algoritmoBayes(resultados, null);
         imprime("Caso 2: testes mistos (+/-), tres especies", ranking);
 
         assertEquals("Bacteria Q", ranking.get(0).getBacteria().getNomeCientifico());
@@ -230,7 +230,7 @@ class IdentificacaoServiceTest {
         List<ResultadoTesteIdentificacao> comVariavel = cincoTestes(ResultadoTeste.POSITIVO);
         comVariavel.add(resultado(teste(9L, "TesteVariavel"), ResultadoTeste.VARIAVEL));
 
-        List<RankingIdentificacao> ranking = service.algoritmoBayes(comVariavel);
+        List<RankingIdentificacao> ranking = service.algoritmoBayes(comVariavel, null);
         imprime("Caso 3: cinco positivos + um variavel", ranking);
 
         // Valores identicos aos do Caso 1, que nao tinha o teste variavel.
@@ -261,7 +261,7 @@ class IdentificacaoServiceTest {
         when(probabilidadeRepository.pegarProbabilidade(2L, 5L)).thenReturn(null);
 
         List<RankingIdentificacao> ranking =
-                service.algoritmoBayes(cincoTestes(ResultadoTeste.POSITIVO));
+                service.algoritmoBayes(cincoTestes(ResultadoTeste.POSITIVO), null);
         imprime("Caso 4: par sem probabilidade cadastrada", ranking);
 
         assertEquals(0.9921, ranking.get(0).getProbabilidadeCalculada(), TOLERANCIA);
@@ -287,7 +287,7 @@ class IdentificacaoServiceTest {
         }
 
         List<RankingIdentificacao> ranking =
-                service.algoritmoBayes(cincoTestes(ResultadoTeste.POSITIVO));
+                service.algoritmoBayes(cincoTestes(ResultadoTeste.POSITIVO), null);
         imprime("Caso 5: clamp de 1 a 99 por cento", ranking);
 
         assertEquals("Bacteria B", ranking.get(0).getBacteria().getNomeCientifico());
@@ -314,7 +314,7 @@ class IdentificacaoServiceTest {
             stub(2L, i + 1, pctB[i]);
         }
 
-        service.algoritmoBayes(cincoTestes(ResultadoTeste.POSITIVO));
+        service.algoritmoBayes(cincoTestes(ResultadoTeste.POSITIVO), null);
 
         verify(identificacaoRepository).save(capturaIdentificacao.capture());
         assertEquals(StatusIdentificacao.CONCLUIDA, capturaIdentificacao.getValue().getStatus());
@@ -327,7 +327,7 @@ class IdentificacaoServiceTest {
     @Test
     void cincoResultadosVariaveis_saoRejeitadosPelaRN06() {
         assertThrows(TestesInsuficientesExceptions.class,
-                () -> service.algoritmoBayes(cincoTestes(ResultadoTeste.VARIAVEL)));
+                () -> service.algoritmoBayes(cincoTestes(ResultadoTeste.VARIAVEL), null));
     }
 
     @Test
@@ -338,7 +338,7 @@ class IdentificacaoServiceTest {
                 resultado(teste(3L, "Teste3"), ResultadoTeste.NEGATIVO));
 
         assertThrows(TestesInsuficientesExceptions.class,
-                () -> service.algoritmoBayes(apenasTres));
+                () -> service.algoritmoBayes(apenasTres, null));
     }
 
     // ------------------------------------------------------------------
@@ -357,12 +357,12 @@ class IdentificacaoServiceTest {
                 resultado(teste(5L, "Teste5"), ResultadoTeste.POSITIVO));
 
         assertThrows(RequisicaoInvalidaException.class,
-                () -> service.algoritmoBayes(comRepetido));
+                () -> service.algoritmoBayes(comRepetido, null));
     }
 
     @Test
     void listaVazia_eRejeitada() {
         assertThrows(RequisicaoInvalidaException.class,
-                () -> service.algoritmoBayes(List.of()));
+                () -> service.algoritmoBayes(List.of(), null));
     }
 }

@@ -6,7 +6,6 @@ import com.example.bacteriaSystem.exceptions.customExceptions.TestesInsuficiente
 import com.example.bacteriaSystem.model.*;
 import com.example.bacteriaSystem.repository.*;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -40,7 +39,9 @@ public class IdentificacaoService {
     ResultadoTesteIdentificacaoRepository resultadoTesteIdentificacaoRepository;
 
     @Transactional
-    public List<RankingIdentificacao> algoritmoBayes(List<ResultadoTesteIdentificacao> resultadoTestesAplicados){
+    public List<RankingIdentificacao> algoritmoBayes(
+            List<ResultadoTesteIdentificacao> resultadoTestesAplicados,
+            Usuario usuario) {
 
         validaQtdTestes(resultadoTestesAplicados);
 
@@ -146,9 +147,10 @@ public class IdentificacaoService {
                         ? StatusIdentificacao.CONCLUIDA
                         : StatusIdentificacao.INCONCLUSIVA);
 
-        Usuario usuarioAutenticado = (Usuario) SecurityContextHolder
-                .getContext().getAuthentication().getPrincipal();
-        novaIdentificacao.setUsuario(usuarioAutenticado);
+        // O usuario vem do controller, que e quem tem acesso ao contexto
+        // de seguranca da requisicao. Manter o SecurityContextHolder fora
+        // do service deixa a regra de negocio testavel sem subir o Spring.
+        novaIdentificacao.setUsuario(usuario);
 
         identificacaoRepository.save(novaIdentificacao);
 

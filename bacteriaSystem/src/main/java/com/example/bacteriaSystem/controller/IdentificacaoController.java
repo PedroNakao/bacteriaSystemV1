@@ -8,12 +8,14 @@ import com.example.bacteriaSystem.model.Bacteria;
 import com.example.bacteriaSystem.model.RankingIdentificacao;
 import com.example.bacteriaSystem.model.ResultadoTesteIdentificacao;
 import com.example.bacteriaSystem.model.TesteBioquimico;
+import com.example.bacteriaSystem.model.Usuario;
 import com.example.bacteriaSystem.repository.BacteriaRepository;
 import com.example.bacteriaSystem.repository.TesteBioquimicoRepository;
 import com.example.bacteriaSystem.service.IdentificacaoService;
 import com.example.bacteriaSystem.service.ResultadoTesteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -69,7 +71,13 @@ public class IdentificacaoController {
                 return newResult;
             }).collect(Collectors.toList());
 
-            List<RankingIdentificacao> ranking = identificacaoService.algoritmoBayes(listaResultado);
+            // RN09: o usuario autenticado vem do contexto de seguranca,
+            // preenchido pelo SecurityFilter a partir do token JWT.
+            Usuario usuarioAutenticado = (Usuario) SecurityContextHolder
+                    .getContext().getAuthentication().getPrincipal();
+
+            List<RankingIdentificacao> ranking =
+                    identificacaoService.algoritmoBayes(listaResultado, usuarioAutenticado);
             List<IdentificacaoResponse> rankResponse = ranking.stream().map(item -> {
                 IdentificacaoResponse newRank = new IdentificacaoResponse(item.getBacteria().getId(), item.getProbabilidadeCalculada(), item.getPosicao(), item.getBacteria().getNomeCientifico(), item.getIdentificacao().getStatus());
                 return newRank;
