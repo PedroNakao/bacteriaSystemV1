@@ -7,3 +7,11 @@ Motilidade;Capacidade de locomocao ativa em meio semi-solido.;Turvacao difusa ao
 Lisina;Descarboxilacao da lisina com formacao de cadaverina.;Mudanca de cor para purpura no meio de Moeller.;true
 Lactose;Capacidade de fermentar a lactose.;Producao de acido (mudanca de cor) no meio TSI.;true
 Gas glicose;Producao de gas durante a fermentacao da glicose.;Formacao de bolha no tubo de Durham (TSI/glicose).;true
+Fenilalanina;Desaminacao da fenilalanina em acido fenilpiruvico pela enzima fenilalanina desaminase.;Cor verde no meio apos adicao de cloreto ferrico a 10%.;true
+Arginina;Hidrolise da arginina pela enzima arginina di-hidrolase, com formacao de produtos alcalinos.;Mudanca de cor para purpura no meio de Moeller.;true
+Ornitina;Descarboxilacao da ornitina com formacao de putrescina.;Mudanca de cor para purpura no meio de Moeller.;true
+Gelatina;Hidrolise da gelatina por enzimas proteoliticas extracelulares (gelatinases).;Meio permanece liquido apos refrigeracao a 4 C.;true
+Malonato;Capacidade de utilizar malonato de sodio como unica fonte de carbono.;Mudanca de cor de verde para azul no caldo malonato.;true
+Sacarose;Capacidade de fermentar a sacarose.;Producao de acido (mudanca de cor para amarelo) no caldo com sacarose e vermelho de fenol.;true
+Esculina;Hidrolise da esculina em esculetina e glicose.;Enegrecimento do meio pela reacao da esculetina com o citrato ferrico.;true
+DNase;Producao de desoxirribonuclease extracelular que hidrolisa o DNA.;Halo transparente ao redor das colonias no agar DNase apos adicao de HCl 1N.;true

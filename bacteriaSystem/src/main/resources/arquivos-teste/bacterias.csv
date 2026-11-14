@@ -4,3 +4,37 @@ Klebsiella pneumoniae;Klebsiella;Enterobacteriaceae;Agente de pneumonia e infecc
 Proteus mirabilis;Proteus;Enterobacteriaceae;Associada a infeccao urinaria e a formacao de calculos por alcalinizacao da urina.;true
 Enterobacter cloacae;Enterobacter;Enterobacteriaceae;Patogeno oportunista hospitalar, frequente em pacientes com dispositivos invasivos.;true
 Salmonella typhi;Salmonella;Enterobacteriaceae;Agente etiologico da febre tifoide, de transmissao fecal-oral por agua e alimentos.;true
+Citrobacter freundii;Citrobacter;Enterobacteriaceae;Patogeno oportunista de infeccao urinaria, respiratoria e bacteremia em pacientes hospitalizados; por produzir H2S pode ser confundido com Salmonella.;true
+Citrobacter koseri;Citrobacter;Enterobacteriaceae;Causa infeccao urinaria e bacteremia oportunistas; associado a meningite e abscesso cerebral em recem-nascidos. Antigo Citrobacter diversus.;true
+Citrobacter amalonaticus;Citrobacter;Enterobacteriaceae;Isolado principalmente de infeccoes urinarias e de feridas, raramente associado a doenca invasiva.;true
+Edwardsiella tarda;Edwardsiella;Enterobacteriaceae;Associada a ambientes aquaticos e peixes; causa gastroenterite e, mais raramente, infeccao de feridas e bacteremia.;true
+Enterobacter aerogenes;Enterobacter;Enterobacteriaceae;Patogeno oportunista hospitalar de infeccao urinaria, respiratoria e bacteremia. Atualmente reclassificado como Klebsiella aerogenes.;true
+Enterobacter gergoviae;Enterobacter;Enterobacteriaceae;Oportunista pouco frequente, isolado de infeccoes urinarias e respiratorias; conhecido contaminante de cosmeticos.;true
+Enterobacter sakazakii;Enterobacter;Enterobacteriaceae;Associado a meningite, sepse e enterocolite necrosante em neonatos, com surtos ligados a formula infantil em po. Atual Cronobacter sakazakii.;true
+Escherichia coli inativa;Escherichia;Enterobacteriaceae;Biotipo de E. coli imovel, anaerogenico e lactose negativo ou tardio; pode ser confundido com Shigella e causa as mesmas infeccoes extraintestinais de E. coli.;true
+Shigella dysenteriae;Shigella;Enterobacteriaceae;Agente de disenteria bacilar; o sorotipo 1 produz toxina Shiga e esta associado a formas graves e a sindrome hemolitico-uremica.;true
+Shigella flexneri;Shigella;Enterobacteriaceae;Principal agente de disenteria bacilar em paises em desenvolvimento, de transmissao fecal-oral com baixa dose infectante.;true
+Shigella boydii;Shigella;Enterobacteriaceae;Agente pouco frequente de disenteria bacilar, de transmissao fecal-oral.;true
+Shigella sonnei;Shigella;Enterobacteriaceae;Especie de Shigella mais comum em paises desenvolvidos, geralmente com quadro diarreico mais brando; unica do genero ornitina positiva.;true
+Hafnia alvei;Hafnia;Enterobacteriaceae;Oportunista de baixa patogenicidade isolado de fezes, trato respiratorio e feridas; ocasionalmente causa bacteremia em imunocomprometidos.;true
+Klebsiella oxytoca;Klebsiella;Enterobacteriaceae;Agente de infeccao hospitalar urinaria, respiratoria e bacteremia; associada a colite hemorragica apos uso de antibioticos. Diferencia-se de K. pneumoniae pelo indol positivo.;true
+Klebsiella ozaenae;Klebsiella;Enterobacteriaceae;Associada a ozena (rinite atrofica cronica) e, raramente, a infeccao urinaria e bacteremia.;true
+Klebsiella rhinoscleromatis;Klebsiella;Enterobacteriaceae;Agente do rinoscleroma, doenca granulomatosa cronica do trato respiratorio superior.;true
+Morganella morganii grupo;Morganella;Enterobacteriaceae;Causa infeccao urinaria, de feridas e bacteremia oportunistas, sobretudo em pacientes hospitalizados.;true
+Pantoea agglomerans;Pantoea;Enterobacteriaceae;Bacteria ambiental associada a plantas; causa infeccoes oportunistas, incluindo bacteremia por fluidos intravenosos contaminados. Antigo Enterobacter agglomerans.;true
+Proteus vulgaris;Proteus;Enterobacteriaceae;Associado a infeccao urinaria e de feridas, principalmente em pacientes hospitalizados; diferencia-se de P. mirabilis pelo indol positivo.;true
+Proteus penneri;Proteus;Enterobacteriaceae;Oportunista isolado de urina, feridas e sangue, geralmente em pacientes hospitalizados.;true
+Providencia rettgeri;Providencia;Enterobacteriaceae;Causa infeccao urinaria, principalmente em pacientes com sonda vesical de longa permanencia.;true
+Providencia stuartii;Providencia;Enterobacteriaceae;Agente de infeccao urinaria em pacientes cateterizados por longo periodo, frequentemente multirresistente.;true
+Providencia alcalifaciens;Providencia;Enterobacteriaceae;Associada a gastroenterite, especialmente diarreia em criancas e diarreia do viajante.;true
+Salmonella spp.;Salmonella;Enterobacteriaceae;Agentes de salmonelose, com gastroenterite, bacteremia e infeccoes focais, transmitidos principalmente por alimentos de origem animal.;true
+Salmonella choleraesuis;Salmonella;Enterobacteriaceae;Sorotipo adaptado a suinos que em humanos causa principalmente bacteremia e infeccoes focais graves.;true
+Salmonella paratyphi A;Salmonella;Enterobacteriaceae;Agente da febre paratifoide, quadro semelhante a febre tifoide e geralmente mais brando.;true
+Salmonella gallinarum;Salmonella;Enterobacteriaceae;Sorotipo adaptado a aves, agente do tifo aviario; raramente patogenico para humanos.;true
+Salmonella pullorum;Salmonella;Enterobacteriaceae;Sorotipo adaptado a aves, agente da pulorose; raramente patogenico para humanos.;true
+Salmonella outras;Salmonella;Enterobacteriaceae;Demais sorotipos de Salmonella, agentes de gastroenterite de origem alimentar e, eventualmente, de bacteremia.;true
+Serratia marcescens;Serratia;Enterobacteriaceae;Patogeno hospitalar de infeccao urinaria, respiratoria e bacteremia, com surtos em UTI neonatal; algumas cepas produzem pigmento vermelho.;true
+Serratia marcescens bio 1;Serratia;Enterobacteriaceae;Biogrupo atipico de S. marcescens, geralmente imovel e com lisina e ornitina variaveis; associado as mesmas infeccoes hospitalares da especie.;true
+Serratia liquefaciens;Serratia;Enterobacteriaceae;Oportunista hospitalar pouco frequente, associado a bacteremia e a contaminacao de hemoderivados.;true
+Serratia rubidaea;Serratia;Enterobacteriaceae;Raramente isolada em clinica; pode produzir pigmento vermelho e causar infeccoes oportunistas.;true
+Yersinia enterocolitica;Yersinia;Enterobacteriaceae;Causa enterocolite e linfadenite mesenterica que pode simular apendicite; transmitida por carne suina e leite, multiplica-se sob refrigeracao.;true

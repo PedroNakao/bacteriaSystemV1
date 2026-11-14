@@ -5,7 +5,7 @@ public enum PerfilUsuario {
     ADMIN("admin"),
     PESQUISADOR("pesquisador");
 
-    private String role;
+    private final String role;
 
 
     PerfilUsuario(String role) {
