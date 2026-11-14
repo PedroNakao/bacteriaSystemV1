@@ -137,7 +137,8 @@ bacteriaSystem/
 
 ## Diagrama Entidade-Relacionamento
 
-![Diagrama ER do BacteriaSys](docs/diagrama-er.png)
+<img width="779" height="513" alt="diagrama-er" src="https://github.com/user-attachments/assets/e1d9034f-439c-4505-ae8d-2b080bfc203b" />
+
 
 O modelo tem dois blocos:
 
