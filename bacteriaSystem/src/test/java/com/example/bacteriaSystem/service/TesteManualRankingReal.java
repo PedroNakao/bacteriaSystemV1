@@ -60,16 +60,15 @@ public class TesteManualRankingReal {
 
     // ---------- EDITE AQUI OS TESTES QUE VOCE QUER SIMULAR ----------
     static final Map<String, ResultadoTeste> TESTES_MARCADOS = new LinkedHashMap<>() {{
-        put("Indol", ResultadoTeste.NEGATIVO);
-        put("Citrato", ResultadoTeste.POSITIVO);
+        put("Indol", ResultadoTeste.POSITIVO);
+        put("Citrato", ResultadoTeste.NEGATIVO);
         put("H2S", ResultadoTeste.NEGATIVO);
         put("Ureia", ResultadoTeste.NEGATIVO);
         put("Motilidade", ResultadoTeste.POSITIVO);
         put("Lisina", ResultadoTeste.POSITIVO);
         put("Lactose", ResultadoTeste.POSITIVO);
-        put("Gas glicose", ResultadoTeste.NEGATIVO);
-        put("Fenilalanina",ResultadoTeste.NEGATIVO);
-        put("DNase",ResultadoTeste.POSITIVO);
+        put("Gas glicose", ResultadoTeste.POSITIVO);
+
     }};
     // ------------------------------------------------------------------
 
