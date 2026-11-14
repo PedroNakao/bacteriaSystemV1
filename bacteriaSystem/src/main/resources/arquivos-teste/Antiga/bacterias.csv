@@ -1,0 +1,6 @@
+nomeCientifico;genero;familia;descricaoClinica;ativo
+Escherichia coli;Escherichia;Enterobacteriaceae;Principal agente de infeccao do trato urinario e causa frequente de diarreia e bacteremia.;true
+Klebsiella pneumoniae;Klebsiella;Enterobacteriaceae;Agente de pneumonia e infeccao hospitalar, com destaque para cepas produtoras de carbapenemase.;true
+Proteus mirabilis;Proteus;Enterobacteriaceae;Associada a infeccao urinaria e a formacao de calculos por alcalinizacao da urina.;true
+Enterobacter cloacae;Enterobacter;Enterobacteriaceae;Patogeno oportunista hospitalar, frequente em pacientes com dispositivos invasivos.;true
+Salmonella typhi;Salmonella;Enterobacteriaceae;Agente etiologico da febre tifoide, de transmissao fecal-oral por agua e alimentos.;true
